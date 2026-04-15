@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vero | Dev Portfolio</title>
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- PARTICLES -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- PARTICLES -->
+<div id="particles-js"></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <ul>
+    <li><a href="#inicio">Bienvenid@s</a></li>
+    <li><a href="#proyectos">Mis Proyectos</a></li>
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#cv">Mi Curriculum</a></li>
+    <li><a href="#contacto">Contáctame</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="glass">
+    <h1>Hola, soy Vero</h1>
+    <h2 class="typing"></h2>
+    <br>
+    <br>
+    <a href="#proyectos" class="btn">Ver proyectos</a>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="section fade">
+  <h2>Proyectos</h2>
+  <br>
+  <div class="cards">
+
+    <a href="#" class="card">
+        <img src="images/5TAEsencia.png">
+        <div class="overlay">
+            <h3>5ta Esencia</h3>
+            <p>E-commerce moderno</p>
+            <P>Desarrrollo de una pagina enfocada en la venta de tablas de quesos por pedido</p>
+            <h4>Tecnologias</h4>
+            <p>HTML, CSS, JS</p>
+        </div>
+    </a>
+
+    <a href="https://crisdrgomez.github.io/Hackaton-No.1/" target="_blank" class="card">
+        <img src="images/HighSierra.png">
+        <div class="overlay">
+            <h3>High Sierra</h3>
+            <p>Landing deportiva</p>
+            <p>Desarrollo de una landing page enfocada en la promocion de un club deportivo.</p>
+            <h4>Tecnologias</h4>
+            <p>HTML, CSS, JS</p>
+        </div>
+    </a>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section fade">
+  <div class="glass">
+    <h2>Sobre mí</h2>
+    <p>Desarrolladora web, enfocada en crear páginas modernas, funcionales y responsivas. Me apasiona aprender nuevas tecnologías y mejorar la experiencia del usuario en cada proyecto.</p>
+
+    <div class="skills">
+      <i class="fab fa-html5"></i>
+      <i class="fab fa-css3-alt"></i>
+      <i class="fab fa-js"></i>
+      <i class="fab fa-git-alt"></i>
+    </div>
+  </div>
+</section>
+
+<!-- CV -->
+<section id="cv" class="section fade">
+  <div class="glass">
+    <h2>Currículum</h2>
+    <p>Puedes visualizar o descargar mi CV aquí 👇</p>
+    <br>
+
+    <!-- VISOR PDF -->
+    <iframe src="assets/CV-Veronica Ortiz Castillo.pdf" width="100%" height="500px"></iframe>
+
+    <br><br>
+
+    <!-- BOTÓN DESCARGA -->
+    <a href="assets/CV-Veronica Ortiz Castillo.pdf" download class="btn">
+      Descargar CV
+    </a>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section fade">
+  <div class="glass">
+    <h2>Contacto</h2>
+    <p>Si deseas comunicarte conmigo, enviarme un correo electronico</p>
+
+    <form>
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Correo">
+      <textarea placeholder="Mensaje"></textarea>
+      <button class="btn">Enviar</button>
+    </form>
+
+    <div class="social">
+      <a href="https://github.com/VeronicaOrtCastillo" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ver%C3%B3nica-ortiz-castillo" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
