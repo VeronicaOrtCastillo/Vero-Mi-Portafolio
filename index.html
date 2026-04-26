@@ -1,140 +1,330 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- META BÁSICOS -->
+  <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive -->
+
+  <!-- TÍTULO DE LA PÁGINA -->
   <title>Vero | Dev Portfolio</title>
+
+  <!-- FUENTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- ICONOS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- PARTICLES -->
+  <!-- LIBRERÍA DE PARTÍCULAS -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
 
+  <!-- HOJA DE ESTILOS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- PARTICLES -->
-<div id="particles-js"></div>
+<!-- FONDO ANIMADO -->
+<div id="particles-js"></div> <!-- Aquí se renderiza el fondo -->
 
-<!-- NAV -->
+<!-- ================= NAVBAR ================= -->
 <nav class="nav">
   <ul>
-    <li><a href="#inicio">Bienvenid@s</a></li>
+    <!-- Enlaces a secciones -->
+    <li><a href="#inicio">Inicio</a></li>
     <li><a href="#proyectos">Mis Proyectos</a></li>
-    <li><a href="#sobre">Sobre mí</a></li>
-    <li><a href="#cv">Mi Curriculum</a></li>
-    <li><a href="#contacto">Contáctame</a></li>
+    <li><a href="#habilidades">Skills</a></li>
+    <li><a href="#sobreMi">Sobre mí</a></li>
+    <li><a href="#contacto">Contacto</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
+<!-- ================= HERO ================= -->
 <section id="inicio" class="hero">
   <div class="glass">
+
+    <!-- FOTO -->
+    <div class="profile">
+      <img src="images/Vero2.png" alt="Foto de Vero">
+    </div>
+
+    <!-- TEXTO -->
     <h1>Hola, soy Vero</h1>
-    <h2 class="typing"></h2>
-    <br>
-    <br>
-    <a href="#proyectos" class="btn">Ver proyectos</a>
+
+    <!-- DESCRIPCIÓN -->
+    <p>
+      Desarrolladora web enfocada en crear experiencias modernas,
+      funcionales y centradas en el usuario.
+    </p>
+
+    <!-- REDES -->
+    <div class="social">
+      <a href="https://github.com/VeronicaOrtCastillo" target="_blank">
+        <i class="fab fa-github fa-2x"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ver%C3%B3nica-ortiz-castillo" target="_blank">
+        <i class="fab fa-linkedin fa-2x"></i>
+      </a>
+
+      <!-- CV -->
+      <a href="assets/CV-Veronica Ortiz Castillo.pdf" target="_blank">
+        <i class="fas fa-file-alt fa-2x"></i>
+      </a>
+    </div>
+
   </div>
 </section>
 
-<!-- PROYECTOS -->
+<!-- ================= PROYECTOS ================= -->
 <section id="proyectos" class="section fade">
   <h2>Proyectos</h2>
-  <br>
+
   <div class="cards">
 
-    <a href="#" class="card">
-        <img src="images/5TAEsencia.png">
-        <div class="overlay">
-            <h3>5ta Esencia</h3>
-            <p>E-commerce moderno</p>
-            <P>Desarrrollo de una pagina enfocada en la venta de tablas de quesos por pedido</p>
-            <h4>Tecnologias</h4>
-            <p>HTML, CSS, JS</p>
-        </div>
-    </a>
+    <!-- PROYECTO 1 -->
+    <div class="card">
+      <img src="images/5TAEsencia.png">
 
-    <a href="https://crisdrgomez.github.io/Hackaton-No.1/" target="_blank" class="card">
-        <img src="images/HighSierra.png">
-        <div class="overlay">
-            <h3>High Sierra</h3>
-            <p>Landing deportiva</p>
-            <p>Desarrollo de una landing page enfocada en la promocion de un club deportivo.</p>
-            <h4>Tecnologias</h4>
-            <p>HTML, CSS, JS</p>
-        </div>
-    </a>
+      <div class="overlay">
+        <h3>5ta Esencia</h3>
+        <p>E-commerce moderno</p>
 
-    <a href="https://veronicaortcastillo.github.io/Proyecto-Titulacion/" target="_blank" class="card">
-        <img src="images/SolicitudA.jpg">
-        <div class="overlay">
-            <h3>Sistema de Pago de Aguinaldo para Personas No Activas</h3>
-            <p>Desarrollé un módulo para la gestión de solicitudes de pago de aguinaldo para personas no activas en la Secretaría de Bienestar Social.</p>
-            <h4>Tecnologias</h4>
-            <p>PHP, MYSQL, Node.js, Yarn, Google reCAPTCHA, GitHub</p>
+        <div class="tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JS</span>
         </div>
-    </a>
+
+        <a href="https://veronicaortcastillo.github.io/5ta-Esencia/" target="_blank" class="btn">Ver proyecto</a>
+      </div>
+    </div>
+
+    <!-- PROYECTO 2 -->
+    <div class="card">
+      <img src="images/AgendaTelefonica.png">
+
+      <div class="overlay">
+        <h3>Agenda Telefonica</h3>
+        <p>Backend</p>
+
+        <div class="tech">
+          <span>IntelliJ IDEA</span>
+          <span>Java</span>
+          <span>GitHub</span>
+        </div>
+
+        <a href="https://github.com/VeronicaOrtCastillo/Agenda-Telefonica" target="_blank" class="btn">
+          Ver proyecto
+        </a>
+      </div>
+    </div>
+
+    <!-- PROYECTO 3 -->
+    <div class="card">
+      <img src="images/HighSierra.png">
+
+      <div class="overlay">
+        <h3>High Sierra</h3>
+        <p>Landing deportiva</p>
+
+        <div class="tech">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JS</span>
+        </div>
+
+        <a href="https://crisdrgomez.github.io/Hackaton-No.1/" target="_blank" class="btn">
+          Ver proyecto
+        </a>
+      </div>
+    </div>
+
+    <!-- PROYECTO 4 -->
+    <div class="card">
+      <img src="images/SolicitudA.jpg">
+
+      <div class="overlay">
+        <h3>Sistema Aguinaldo</h3>
+        <p>Gestión de solicitudes</p>
+
+        <div class="tech">
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>Node</span>
+        </div>
+
+        <a href="https://veronicaortcastillo.github.io/Proyecto-Titulacion/" target="_blank" class="btn">
+          Ver proyecto
+        </a>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- SOBRE -->
-<section id="sobre" class="section fade">
-  <div class="glass">
-    <h2>Sobre mí</h2>
-    <p>Desarrolladora web, enfocada en crear páginas modernas, funcionales y responsivas. Me apasiona aprender nuevas tecnologías y mejorar la experiencia del usuario en cada proyecto.</p>
+<!-- ================= HABILIDADES ================= -->
+<section id="habilidades" class="section fade">
+  <h2>Habilidades</h2>
 
-    <div class="skills">
+  <!-- FRONTEND -->
+  <h3 class="skills-title">Frontend</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
       <i class="fab fa-html5"></i>
+      <h4>HTML</h4>
+      <p>Estructura semántica</p>
+    </div>
+
+    <div class="skill-card">
       <i class="fab fa-css3-alt"></i>
+      <h4>CSS</h4>
+      <p>Diseño responsive</p>
+    </div>
+
+    <div class="skill-card">
       <i class="fab fa-js"></i>
+      <h4>JavaScript</h4>
+      <p>Interactividad web</p>
+    </div>
+  </div>
+
+  <!-- BACKEND -->
+  <h3 class="skills-title">Backend</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <i class="fas fa-database"></i>
+      <h4>MySQL</h4>
+      <p>Gestión de bases de datos</p>
+    </div>
+
+    <div class="skill-card">
+      <i class="fab fa-java"></i>
+      <h4>Java</h4>
+      <p>Desarrollo backend y lógica del servidor</p>
+    </div>
+  </div>
+
+  <!-- HERRAMIENTAS -->
+  <h3 class="skills-title">Herramientas</h3>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <i class="fab fa-github"></i>
+      <h4>GitHub</h4>
+      <p>Repositorios y colaboración</p>
+    </div>
+
+    <div class="skill-card">
       <i class="fab fa-git-alt"></i>
+      <h4>Git Bash</h4>
+      <p>Control de versiones en terminal</p>
     </div>
   </div>
 </section>
 
-<!-- CV -->
-<section id="cv" class="section fade">
-  <div class="glass">
-    <h2>Currículum</h2>
-    <p>Puedes visualizar o descargar mi CV aquí 👇</p>
+<!-- ================= SOBRE MI ================= -->
+<section id="sobreMi" class="section fade">
+
+  <div class="glass2">
+  
+    <h2>Sobre mí</h2>
+  
+    <!-- TEXTO ANIMADO -->
+    <h2 class="typing"></h2>
+  
+    <!-- CONTENIDO -->
+    <div class="about-container">
+    
+      <!-- TEXTO -->
+      <div class="about-text">
+        <p>
+          Soy desarrolladora Full Stack Jr. con enfoque en frontend, especializada en HTML, CSS y JavaScript. 
+          Me apasiona crear interfaces modernas, funcionales y centradas en el usuario.
+        </p>
+      
+        <p>
+          Me formé en Generation México como desarrolladora Java Full Stack, donde trabajé en proyectos colaborativos 
+          integrando frontend y backend.
+        </p>
+      
+        <p>
+          Tengo experiencia trabajando con Git, GitHub y metodologías ágiles como Scrum, desarrollando soluciones 
+          eficientes en equipo.
+        </p>
+      </div>
+    
+      <!-- HIGHLIGHTS (tipo tarjetas pequeñas) -->
+      <div class="about-cards">
+      
+        <div class="about-card">
+          <i class="fas fa-code"></i>
+          <h4>Frontend</h4>
+          <p>Interfaces modernas</p>
+        </div>
+      
+        <div class="about-card">
+          <i class="fas fa-layer-group"></i>
+          <h4>Full Stack</h4>
+          <p>Integración completa</p>
+        </div>
+      
+        <div class="about-card">
+          <i class="fas fa-users"></i>
+          <h4>Scrum</h4>
+          <p>Trabajo en equipo</p>
+        </div>
+      
+      </div>
+    
+    </div>
+  
+  </div>
+</section>
+
+<!-- ================= CONTACTO ================= -->
+<section id="contacto" class="section fade">
+  <div class="glass2">
+    <h2>Contacto</h2>
+
+    <p>Puedes contactarme por correo:</p>
+
+    <div class="email-box">
+      <span id="email">veronicaortcaz@gmail.com</span>
+      <button onclick="copyEmail()" class="btn">Copiar</button>
+    </div>
+
+    <p>Visita mis redes: </p>
     <br>
+    
+    <a href="https://github.com/VeronicaOrtCastillo" target="_blank">
+      <i class="fab fa-github fa-3x"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ver%C3%B3nica-ortiz-castillo" target="_blank">
+      <i class="fab fa-linkedin fa-3x"></i>
+    </a>
 
-    <!-- VISOR PDF -->
-    <iframe src="assets/CV-Veronica Ortiz Castillo.pdf" width="100%" height="500px"></iframe>
+  </div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <!-- Redes -->
+  <div class="footer-social">
 
-    <br><br>
+    <a href="https://github.com/VeronicaOrtCastillo" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
 
-    <!-- BOTÓN DESCARGA -->
-    <a href="assets/CV-Veronica Ortiz Castillo.pdf" download class="btn">
-      Descargar CV
+    <a href="https://www.linkedin.com/in/ver%C3%B3nica-ortiz-castillo" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+
+    <!-- CV -->
+    <a href="assets/CV-Veronica Ortiz Castillo.pdf" target="_blank">
+      <i class="fas fa-file-alt"></i>
     </a>
   </div>
-</section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="section fade">
-  <div class="glass">
-    <h2>Contacto</h2>
-    <p>Si deseas comunicarte conmigo, enviarme un correo electronico</p>
+</footer>
 
-    <form>
-      <input type="text" placeholder="Nombre">
-      <input type="email" placeholder="Correo">
-      <textarea placeholder="Mensaje"></textarea>
-      <button class="btn">Enviar</button>
-    </form>
-
-    <div class="social">
-      <a href="https://github.com/VeronicaOrtCastillo" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/ver%C3%B3nica-ortiz-castillo" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </div>
-</section>
-
+<!-- JS -->
 <script src="script.js"></script>
 
 </body>
