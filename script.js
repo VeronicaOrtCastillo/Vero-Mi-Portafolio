@@ -46,11 +46,18 @@ window.addEventListener("scroll", ()=>{
 
 // ================= COPIAR EMAIL =================
 function copyEmail(){
+
+  // Obtiene el texto del correo
   const email = document.getElementById("email").textContent;
 
-  navigator.clipboard.writeText(email); // Copia al portapapeles
-
-  alert("Correo copiado 📋"); // Notificación
+  // Copia al portapapeles
+  navigator.clipboard.writeText(email)
+    .then(() => {
+      alert("Correo copiado 📋"); // éxito
+    })
+    .catch(() => {
+      alert("No se pudo copiar"); // error
+    });
 }
 
 
@@ -90,4 +97,31 @@ window.addEventListener("scroll", () => {
       link.classList.add("active");
     }
   });
+});
+
+// ================= FORMULARIO FORMSPREE PRO =================
+
+const form = document.querySelector(".contact-form");
+
+form.addEventListener("submit", async function(e){
+
+  e.preventDefault(); // evita redirección
+
+  const data = new FormData(form);
+
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: data,
+    headers: {
+      'Accept': 'application/json'
+    }
+  });
+
+  if(response.ok){
+    alert("Mensaje enviado correctamente ✅");
+    form.reset();
+  }else{
+    alert("Error al enviar 😢");
+  }
+
 });
