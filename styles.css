@@ -52,6 +52,7 @@ body{
   transition: all 0.3s ease; /* Animación suave */
 
   background: rgba(15,23,42,0.9); /* Transparente al inicio */
+
 }
 
 /* CUANDO HACES SCROLL */
@@ -147,7 +148,7 @@ body{
 
 /* SECCIONES */
 .section{
-  padding:120px 20px;
+  padding:50px 20px; /* Menos espacio vertical */
 }
 
 /* TARJETAS DE PROYECTOS */
@@ -168,6 +169,8 @@ body{
 
 .card img{
   width:100%;
+  height:200px;
+  object-fit:cover;
 }
 
 /* OVERLAY (hover) */
@@ -260,6 +263,10 @@ body{
   .skills-title.full{
     grid-column: span 1;
   }
+
+   .section{
+    padding:60px 15px;
+  }
 }
 
 /* TITULO DE CADA SKILL */
@@ -333,6 +340,19 @@ body{
   color:var(--accent);
   transform:translateY(-3px);
 }
+
+/* Iconos de redes */
+.social a{
+  margin: 0 10px;
+  color: var(--text);
+  transition:0.3s;
+}
+
+/* Hover elegante */
+.social a:hover{
+  color:#38bdf8;
+  text-shadow:0 0 10px #38bdf8;
+}
 /* ================= SOBRE MI MEJORADO ================= */
 
 /* Contenedor principal */
@@ -387,4 +407,74 @@ body{
   font-size:25px;
   margin-bottom:8px;
   color:#38bdf8;
+}
+
+/* ================= FORMULARIO ================= */
+
+/* Contenedor del formulario */
+.contact-form{
+  display:flex; /* Ordena elementos en columna */
+  flex-direction:column;
+  gap:15px; /* Espacio entre inputs */
+  max-width:400px; /* Ancho máximo */
+  margin:20px auto; /* Centrado */
+}
+
+/* Inputs y textarea */
+.contact-form input,
+.contact-form textarea{
+  padding:12px;
+  border-radius:10px;
+  border:none;
+  background:#095474; /* Fondo oscuro acorde al diseño */
+  color:black;
+  outline:none;
+}
+
+/* Altura del textarea */
+.contact-form textarea{
+  min-height:120px;
+}
+
+/* Efecto focus (cuando el usuario escribe) */
+.contact-form input:focus,
+.contact-form textarea:focus{
+  border:1px solid #38bdf8;
+}
+
+/* ================= PROYECTOS MEJORADOS ================= */
+
+/* Información visible debajo de la imagen */
+.card-info{
+  padding:15px;
+}
+
+/* Animación más profesional en hover */
+.card{
+  transition:0.4s;
+}
+
+/* Efecto flotante */
+.card:hover{
+  transform:translateY(-10px) scale(1.02);
+  box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* ================= MINI TECH ================= */
+
+/* Contenedor de tecnologías */
+.mini-tech{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:8px 0;
+}
+
+/* Cada tecnología */
+.mini-tech span{
+  background:#38bdf8;
+  color:#0f172a;
+  padding:3px 8px;
+  border-radius:6px;
+  font-size:11px;
 }
