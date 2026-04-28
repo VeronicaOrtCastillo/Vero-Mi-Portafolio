@@ -66,8 +66,13 @@
         <i class="fab fa-linkedin fa-2x"></i>
       </a>
 
+      <!-- ICONO QUE LLEVA A LA SECCIÓN CONTACTO -->
+      <a href="#contacto" title="Ir a contacto">
+        <i class="fas fa-envelope fa-2x"></i>
+      </a>
+
       <!-- CV -->
-      <a href="assets/CV-Veronica Ortiz Castillo.pdf" target="_blank">
+      <a href="assets/Veronica Ortiz Castillo.pdf" target="_blank">
         <i class="fas fa-file-alt fa-2x"></i>
       </a>
     </div>
@@ -85,33 +90,53 @@
     <div class="card">
       <img src="images/5TAEsencia.png">
 
-      <div class="overlay">
+      <!-- INFORMACIÓN VISIBLE SIEMPRE -->
+      <div class="card-info">
+        <!-- Nombre del proyecto -->
         <h3>5ta Esencia</h3>
-        <p>E-commerce moderno</p>
 
-        <div class="tech">
+        <!-- Descripción-->
+        <p>
+          E-commerce con carrito, UI responsive y lógica frontend
+        </p>
+
+        <!-- Tecnologías rápidas (muy importante) -->
+        <div class="mini-tech">
           <span>HTML</span>
           <span>CSS</span>
           <span>JS</span>
         </div>
+      </div>
+
+      <div class="overlay">
 
         <a href="https://veronicaortcastillo.github.io/5ta-Esencia/" target="_blank" class="btn">Ver proyecto</a>
+      
       </div>
+
     </div>
 
     <!-- PROYECTO 2 -->
     <div class="card">
       <img src="images/AgendaTelefonica.png">
 
-      <div class="overlay">
+      <!-- INFORMACIÓN VISIBLE SIEMPRE -->
+      <div class="card-info">
+        <!-- Nombre del proyecto -->
         <h3>Agenda Telefonica</h3>
-        <p>Backend</p>
+        <!-- Descripción mejorada -->
+        <p>
+          CRUD de contactos con validaciones y control de capacidad (Backend).
+        </p>
 
-        <div class="tech">
+        <div class="mini-tech">
           <span>IntelliJ IDEA</span>
           <span>Java</span>
           <span>GitHub</span>
         </div>
+      </div>
+
+      <div class="overlay">
 
         <a href="https://github.com/VeronicaOrtCastillo/Agenda-Telefonica" target="_blank" class="btn">
           Ver proyecto
@@ -123,15 +148,23 @@
     <div class="card">
       <img src="images/HighSierra.png">
 
-      <div class="overlay">
+      <!-- INFORMACIÓN VISIBLE SIEMPRE -->
+      <div class="card-info">
+        <!-- Nombre del proyecto -->
         <h3>High Sierra</h3>
-        <p>Landing deportiva</p>
+        <!-- Descripción mejorada -->
+        <p>
+          Landing page para club deportivo con enfoque visual y responsive.
+        </p>
 
-        <div class="tech">
+        <div class="mini-tech">
           <span>HTML</span>
           <span>CSS</span>
           <span>JS</span>
         </div>
+      </div>
+
+      <div class="overlay">
 
         <a href="https://crisdrgomez.github.io/Hackaton-No.1/" target="_blank" class="btn">
           Ver proyecto
@@ -143,15 +176,23 @@
     <div class="card">
       <img src="images/SolicitudA.jpg">
 
-      <div class="overlay">
-        <h3>Sistema Aguinaldo</h3>
-        <p>Gestión de solicitudes</p>
+      <!-- INFORMACIÓN VISIBLE SIEMPRE -->
+      <div class="card-info">
+        <!-- Nombre del proyecto -->
+        <h3>Sistema de pago de Aguinaldo para personas no Activas</h3>
+        <!-- Descripción mejorada -->
+        <p>
+          Sistema de Aguinaldo
+        </p>
 
-        <div class="tech">
+        <div class="mini-tech">
           <span>PHP</span>
           <span>MySQL</span>
           <span>Node</span>
         </div>
+      </div>
+
+      <div class="overlay">
 
         <a href="https://veronicaortcastillo.github.io/Proyecto-Titulacion/" target="_blank" class="btn">
           Ver proyecto
@@ -286,10 +327,44 @@
 
     <p>Puedes contactarme por correo:</p>
 
-    <div class="email-box">
-      <span id="email">veronicaortcaz@gmail.com</span>
-      <button onclick="copyEmail()" class="btn">Copiar</button>
-    </div>
+    <!-- ================= FORMULARIO DE CONTACTO ================= -->
+    <!-- ================= FORMULARIO FUNCIONAL ================= -->
+    <form class="contact-form" action="https://formspree.io/f/xgorjygr" method="POST">
+
+      <!-- Nombre -->
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Tu nombre" 
+        required
+      >
+
+      <!-- Correo -->
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Tu correo" 
+        required
+      >
+
+      <!-- Mensaje -->
+      <textarea 
+        name="message" 
+        placeholder="Tu mensaje" 
+        required>
+      </textarea>
+
+      <!-- Botón -->
+      <button class="btn">Enviar</button>
+
+    </form>
+    <p>O si prefieres, escríbeme directamente:</p>
+
+    <span id="email">veronicaortcaz@gmail.com</span>
+
+    <button onclick="copyEmail()" class="btn">
+      Copiar correo
+    </button>
 
     <p>Visita mis redes: </p>
     <br>
@@ -317,7 +392,7 @@
     </a>
 
     <!-- CV -->
-    <a href="assets/CV-Veronica Ortiz Castillo.pdf" target="_blank">
+    <a href="assets/Veronica Ortiz Castillo.pdf" target="_blank">
       <i class="fas fa-file-alt"></i>
     </a>
   </div>
