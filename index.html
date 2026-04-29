@@ -28,7 +28,13 @@
 
 <!-- ================= NAVBAR ================= -->
 <nav class="nav">
-  <ul>
+
+  <!-- BOTÓN HAMBURGUESA -->
+  <div class="menu-toggle" id="menuToggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <ul id="navMenu">
     <!-- Enlaces a secciones -->
     <li><a href="#inicio">Inicio</a></li>
     <li><a href="#proyectos">Mis Proyectos</a></li>
@@ -378,6 +384,7 @@
 
   </div>
 </section>
+
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <!-- Redes -->
@@ -399,8 +406,27 @@
 
 </footer>
 
+<!-- BOTÓN FLOTANTE -->
+<div id="chatButton" title="Habla conmigo 👋">
+  <i class="fas fa-robot"></i>
+</div>
+
+<!-- CHAT -->
+<div id="chatBox">
+  <div class="chat-header">
+    <span>Asistente Vero</span>
+    <button id="closeChat">✖</button>
+  </div>
+
+  <div id="chatMessages"></div>
+
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Escribe tu pregunta...">
+    <button id="sendBtn">Enviar</button>
+  </div>
+</div>
+
 <!-- JS -->
 <script src="script.js"></script>
-
 </body>
 </html>
